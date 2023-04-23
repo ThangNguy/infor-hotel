@@ -1,0 +1,7 @@
+<p-carousel [value]="products" [numVisible]="1">
+  <ng-template let-product pTemplate="item">
+    <img src="{{ product.image }}" [alt]="product.name" class="w-6 shadow-2" />
+  </ng-template>
+</p-carousel>
+
+<!-- [responsiveOptions]="responsiveOptions"  -->
