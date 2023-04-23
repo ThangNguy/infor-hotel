@@ -1,7 +1,7 @@
-<p-carousel [value]="products" [numVisible]="1">
-  <ng-template let-product pTemplate="item">
-    <img src="{{ product.image }}" [alt]="product.name" class="w-6 shadow-2" />
-  </ng-template>
-</p-carousel>
-
-<!-- [responsiveOptions]="responsiveOptions"  -->
+<swiper [autoHeight]="true">
+  <ng-container *ngFor="let item of products">
+    <ng-template swiperSlide>
+      <img [src]="item.image" [alt]="item.name" />
+    </ng-template>
+  </ng-container>
+</swiper>

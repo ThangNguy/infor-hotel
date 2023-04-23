@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarouselModule } from 'primeng/carousel';
-
+import { SwiperModule } from "swiper/angular";
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +11,7 @@ import { CarouselModule } from 'primeng/carousel';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
